@@ -7,6 +7,9 @@ import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.ScaleAnimation;
 
+/**
+ * 模拟百分比进度条
+ */
 public class ScaleAnimationActivity extends AppCompatActivity {
 
     private View bg;
