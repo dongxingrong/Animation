@@ -15,7 +15,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ScaleAnimationActivity"></activity>
+        <activity android:name=".ScaleAnimationActivity" />
+        <activity android:name=".CurvesActivity" />
+        <activity android:name=".ObjectAnimatorActivity"></activity>
     </application>
 
 </manifest>
