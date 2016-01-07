@@ -8,4 +8,21 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <declare-styleable name="DrawView">
+        <attr name="finalHalfCentralAngle" format="float"/>
+        <attr name="arcColor" format="color"/>
+        <attr name="arcStrokeWidth" format="float"/>
+        <attr name="horizonColor" format="color"/>
+        <attr name="horizonStrokeWidth" format="float"/>
+        <attr name="sunStrokeColor" format="color"/>
+        <attr name="sunFillColor" format="color"/>
+        <attr name="riseBackgroundColor" format="color"/>
+        <attr name="textColor" format="color"/>
+        <attr name="textSize" format="dimension"/>
+        <attr name="dawnTime" format="string"/>
+        <attr name="duskTime" format="string"/>
+        <attr name="animationDuration" format="float"/>
+        <attr name="animationDelay" format="float"/>
+    </declare-styleable>
+
 </resources>

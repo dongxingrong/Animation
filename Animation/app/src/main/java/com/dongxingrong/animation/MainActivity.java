@@ -7,11 +7,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.dongxingrong.animation.propertyanimation.BezierCurveActivity;
+import com.dongxingrong.animation.propertyanimation.ObjectAnimation;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
     private Button scaleAnimation;
-    private Button curvesAnimation;
     private Button objectAnimator;
+    private Button bezierCurve;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,11 +24,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         scaleAnimation = (Button) findViewById(R.id.scaleAnimation);
         scaleAnimation.setOnClickListener(this);
 
-        curvesAnimation = (Button) findViewById(R.id.curvesAnimation);
-        curvesAnimation.setOnClickListener(this);
-
         objectAnimator = (Button) findViewById(R.id.objectAnimator);
         objectAnimator.setOnClickListener(this);
+
+        bezierCurve = (Button) findViewById(R.id.bezierCurve);
+        bezierCurve.setOnClickListener(this);
 
     }
 
@@ -35,11 +38,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
            case R.id.scaleAnimation:
                startActivity(new Intent(MainActivity.this, ScaleAnimationActivity.class));
                break;
-           case R.id.curvesAnimation:
-               startActivity(new Intent(MainActivity.this, CurvesActivity.class));
-               break;
            case R.id.objectAnimator:
-               startActivity(new Intent(MainActivity.this, ObjectAnimatorActivity.class));
+               startActivity(new Intent(MainActivity.this, ObjectAnimation.class));
+               break;
+           case R.id.bezierCurve:
+               startActivity(new Intent(MainActivity.this, BezierCurveActivity.class));
                break;
        }
     }

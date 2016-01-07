@@ -24,13 +24,13 @@
                 android:layout_height="wrap_content" />
             <Button
                 android:layout_width="match_parent"
-                android:id="@+id/curvesAnimation"
-                android:text="CurvesAnimation"
+                android:id="@+id/objectAnimator"
+                android:text="objectAnimator"
                 android:layout_height="wrap_content" />
             <Button
                 android:layout_width="match_parent"
-                android:id="@+id/objectAnimator"
-                android:text="objectAnimator"
+                android:id="@+id/bezierCurve"
+                android:text="bezierCurve"
                 android:layout_height="wrap_content" />
         </LinearLayout>
     </ScrollView>

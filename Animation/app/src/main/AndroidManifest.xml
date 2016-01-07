@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.dongxingrong.animation">
+    package="com.dongxingrong.animation" >
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        android:theme="@style/AppTheme" >
+        <activity android:name=".MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -16,8 +16,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".ScaleAnimationActivity" />
-        <activity android:name=".CurvesActivity" />
-        <activity android:name=".ObjectAnimatorActivity"></activity>
+        <activity android:name=".ObjectAnimatorActivity" />
+        <activity android:name=".propertyanimation.ObjectAnimation" >
+        </activity>
+        <activity android:name=".propertyanimation.BezierCurveActivity" >
+        </activity>
     </application>
 
 </manifest>
